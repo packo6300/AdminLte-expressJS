@@ -11,8 +11,9 @@ var usersRouter = require('./routes/users');
 var app = express();
 app.use(cookieParser());
 const session = require('express-session');
+const project ="Admin LTE > Dashboard";
 app.use(session({
-    secret: 'dasboard',
+    secret: 'dashboard',
     resave: false,
     saveUninitialized: true
 }));
